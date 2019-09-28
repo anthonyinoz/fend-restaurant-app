@@ -41,7 +41,7 @@ The default focus ring was not easily visible, particularly on the blue map back
 
 The colour of several elements was modified to enhance the colour contrast ratio consistent with a WCAG 2.1 AAA rating.
 
-## Note regarding Mapbox Accessibility
+## Note regarding Mapbox accessibility
 
 There are a number of accessibility issues relating to Mapbox which have not been addressed in the app. The main problem is that the user is able to move (pan or zoom) to a region on the map where no markers exist and then _tab_ to a marker that is no longer onscreen. A possible solution is to centre the map on the focused marker by handling the _focus_ event.
 Another problem is that a meaningful _tab_ sequence is not applied within the map.
