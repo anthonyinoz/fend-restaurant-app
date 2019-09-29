@@ -15,6 +15,8 @@ Note that if port 8000 is unavailable, a different port number may be specified 
 
 2. Navigate to `localhost:8000` using the latest version of Chrome or Firefox.
 
+There is also a live version of the app without the progressive web app features [here](http://users.tpg.com.au/alorient/fend-proj5/). Since it the app is being served over an unsecure HTTP protocol the service worker is non-functional.
+
 ## Summary of changes
 
 Changes made to the code to meet the project objectives have been commented with a "_>>>_" prefix.
@@ -41,7 +43,11 @@ The default focus ring was not easily visible, particularly on the blue map back
 
 The colour of several elements was modified to enhance the colour contrast ratio consistent with a WCAG 2.1 AAA rating.
 
-## Note regarding Mapbox accessibility
+### Skip links -  bypass content
+
+A skip link was included on the home page to allow the user to bypass map information (markers etc.) and proceed to the restaurant listing.
+
+## Note regarding Mapbox Accessibility
 
 There are a number of accessibility issues relating to Mapbox which have not been addressed in the app. The main problem is that the user is able to move (pan or zoom) to a region on the map where no markers exist and then _tab_ to a marker that is no longer onscreen. A possible solution is to centre the map on the focused marker by handling the _focus_ event.
 Another problem is that a meaningful _tab_ sequence is not applied within the map.
